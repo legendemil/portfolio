@@ -4,6 +4,7 @@ import React from "react";
 
 // React Components
 import Home from "./js/Home";
+import SkillsIntro from "./js/SkillsIntro";
 
 // Styles
 require("./sass/main.sass");
@@ -12,7 +13,10 @@ class Main extends React.Component {
 
     render() {
         return(
-            <Home />
+            <div>
+                <Home />
+                <SkillsIntro />
+            </div>
         )
     }
 }
