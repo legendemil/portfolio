@@ -11,12 +11,15 @@ export default class Home extends React.Component {
             <section className="home">
 
                 <PageHeader />
-                <HomeHeading 
-                    text={"Hi, I'm Emil Pausz"}/>
-                <HomeHeading 
-                    headingText={"About me"} 
-                    text={"I'm a Front-End Developer from Poland. Why I love coding? Because It's awesome!"}/>
 
+                <div className="row">
+                    <HomeHeading 
+                    text={"Hi, I'm Emil"}/>
+                    <HomeAbout 
+                        headingText={"About me"} 
+                        text={"I'm a Front-End Developer from Poland. Why I love coding? Because It's awesome!"}/>
+                </div>        
+                
             </section> 
         )
     }
