@@ -6,6 +6,7 @@ import React from "react";
 import Home from "./js/Home";
 import SkillsIntro from "./js/SkillsIntro";
 import Skills from "./js/Skills";
+import Projects from "./js/Projects";
 
 // Styles
 require("./sass/main.sass");
@@ -18,6 +19,7 @@ class Main extends React.Component {
                 <Home />
                 <SkillsIntro />
                 <Skills />
+                <Projects />
             </div>
         )
     }
