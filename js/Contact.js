@@ -1,6 +1,7 @@
 import React from "react";
 
 import HorizonList from './Lists/HorizonList';
+import QuotesBox from './QuotesBox';
 
 export default class Contact extends React.Component {
 
@@ -11,7 +12,8 @@ export default class Contact extends React.Component {
         return(
             <section className="section--main">       
                 <h3 className="section__heading section--main__heading">You can catch me...</h3>
-                <HorizonList items={ contactsList } />            
+                <HorizonList items={ contactsList } />  
+                <QuotesBox />          
             </section> 
         )
     }
