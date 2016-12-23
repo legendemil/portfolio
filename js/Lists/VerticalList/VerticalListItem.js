@@ -7,7 +7,7 @@ export default class VerticalListItem extends React.Component {
         let { text, liveHref, gitHref } = this.props;
         return(
             <li className={"vertical-list__item"}>
-                <a href={ liveHref }>{ text }</a> <a href={ gitHref }><img alt={"git-logo"} src="img/github.png" /></a>
+                <a href={ liveHref } target="_blank">{ text }</a> <a href={ gitHref }><img alt={"git-logo"} src="img/github.png" /></a>
             </li>
         )
     }
