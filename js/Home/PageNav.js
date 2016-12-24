@@ -5,6 +5,7 @@ import NavBtn from "./PageNav/NavBtn";
 export default class PageNav extends React.Component {
 
     render() {
+        
         return(
             <nav className="page-nav">
                 <NavBtn text={"Emil Pausz"} href={"#"}/>

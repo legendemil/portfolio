@@ -2,6 +2,11 @@
     width: 100%
     display: flex
     justify-content: flex-end
+    position: fixed
+    top: 0
+    left: 0
+    background-color: $main-color
+    z-index: 100
     &__btn
         color: $nav-link-color
         text-decoration: none
@@ -11,5 +16,13 @@
         padding: 2rem
         display: inline-block
         box-sizing: border-box
+        transition: padding .3s, font-size .3s 
+        &:hover
+            background-color: $white
+            color: $main-color
+        &.is-small
+            padding-top: 1rem
+            padding-bottom: 1rem
+            font-size: 1rem
         &:first-child
             margin-right: auto
