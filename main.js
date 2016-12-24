@@ -8,6 +8,7 @@ import SkillsIntro from "./js/SkillsIntro";
 import Skills from "./js/Skills";
 import Projects from "./js/Projects";
 import Contact from "./js/Contact";
+import PageFooter from "./js/PageFooter";
 
 // Styles
 require("./sass/main.sass");
@@ -22,6 +23,7 @@ class Main extends React.Component {
                 <Skills />
                 <Projects />
                 <Contact />
+                <PageFooter />
             </div>
         )
     }
