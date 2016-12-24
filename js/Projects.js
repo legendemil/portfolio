@@ -8,7 +8,7 @@ export default class Projects extends React.Component {
 
         let projects = [{
             liveHref: 'http://vetter.zse.lublin.pl/cichociemny/',
-            gitHref: '#',
+            gitHref: 'https://github.com/legendemil/cichociemny',
             text: "Page about Polish soldier"
         }, {
             liveHref: 'http://codepen.io/legendemil/full/Krqaqy/',
