@@ -1,11 +1,28 @@
 .home
     background-color: $main-color  
     &__heading
+        position: relative
         font-size: $heading-section-size
+        font-family: monospace
         color: $white
+        margin: 0 auto
         text-align: center
         align-self: center
-        width: 50%
+        width: 12ch
+        &:after
+            position: absolute
+            content: ''
+            height: 100%
+            width: 100%
+            background-color: $main-color
+            top: 0
+            left: 0
+            transform-origin: right
+            animation:
+                name: show-text, animate-pipe
+                duration: 3s
+                timing-function: steps(12)
+                fill-mode: forwards
     &-about
         padding: 3rem
         width: 50%
@@ -25,4 +42,9 @@
             line-height: 1.5
 
             
-            
+@keyframes show-text
+    from
+        transform: scaleX(1)
+    to
+        transform: scaleX(0)
+  
