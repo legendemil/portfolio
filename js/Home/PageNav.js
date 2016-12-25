@@ -10,7 +10,7 @@ export default class PageNav extends React.Component {
             <nav className="page-nav">
                 <NavBtn text={"Emil Pausz"} href={"#"}/>
                 <NavBtn text={"Skills"} href={"#"}/>
-                <NavBtn text={"Project"} href={"#"}/>
+                <NavBtn text={"Projects"} href={"#"}/>
                 <NavBtn text={"Contact"} href={"#"}/>
             </nav>
         )
