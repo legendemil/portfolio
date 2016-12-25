@@ -9,6 +9,16 @@
 .lightest
     color: $lightest-color
 
+.anim-slide-text
+    display: inline-block
+    overflow-x: hidden
+    transition: width .6s
+    vertical-align: bottom
+    &.start
+        width: 0
+    &.end
+        width: 8ch
+
 .color-main
     color: $main-color
 

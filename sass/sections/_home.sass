@@ -9,6 +9,7 @@
         text-align: center
         align-self: center
         width: 12ch
+        overflow: hidden
         &:after
             position: absolute
             content: ''
@@ -18,10 +19,12 @@
             top: 0
             left: 0
             transform-origin: right
+            border-left: 2px solid $white
             animation:
                 name: show-text, animate-pipe
-                duration: 3s
+                duration: 3s, .9s
                 timing-function: steps(12)
+                iteration-count: 1, infinite
                 fill-mode: forwards
     &-about
         padding: 3rem
@@ -43,8 +46,10 @@
 
             
 @keyframes show-text
-    from
-        transform: scaleX(1)
     to
-        transform: scaleX(0)
+        transform: translateX( calc( 100% - 4px ) )
+
+@keyframes animate-pipe
+    to
+        border-left: none
   
