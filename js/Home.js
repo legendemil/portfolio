@@ -19,7 +19,10 @@ export default class Home extends React.Component {
                     <HomeAbout 
                         headingText={"About me"} 
                         text={"I'm a Front-End Developer from Poland. Why I love coding? Because It's awesome!"}/>
-                </div>        
+                </div> 
+
+                <div className="section__separator">
+                </div>       
                 
             </section> 
         )
