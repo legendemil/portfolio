@@ -10,7 +10,7 @@ export default class Skills extends React.Component {
             futureSkills = [ 'reactivex', 'node', 'angularjs'];
 
         return(
-            <section className="section--main">       
+            <section className="section--main" id="skills">       
                 <h3 className="section__heading section--main__heading">I can built something with</h3>
                 <HorizonList items={ currSkills } />
                 <h3 className="section__heading section--main__heading">But also I'd like to master</h3>

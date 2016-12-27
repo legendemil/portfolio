@@ -1,6 +1,7 @@
 .home
     background-color: $main-color  
     &__heading
+        background: $main-color
         position: relative
         font-size: $heading-section-size
         font-family: monospace
@@ -26,8 +27,13 @@
                 timing-function: steps(12)
                 iteration-count: 1, infinite
                 fill-mode: forwards
+        @media screen and (max-width: $bp-sm)
+            width: 100%
+            padding: 6rem 0
+            &:after
+                content: none
     &-about
-        padding: 3rem
+        padding: 5rem
         width: 50%
         background:
             color: $white
@@ -43,6 +49,10 @@
             font:
                 size: 2.7rem
             line-height: 1.5
+        @media screen and (max-width: $bp-sm)
+            width: 100%
+            box-sizing: border-box
+            
 
             
 @keyframes show-text

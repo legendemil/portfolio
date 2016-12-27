@@ -10,7 +10,7 @@ export default class Contact extends React.Component {
             contactsList = [ 'linkedin', 'codepen', 'twitter', 'freecodecamp', 'gmail' ];
 
         return(
-            <section className="section--main">       
+            <section className="section--main" id="contact">       
                 <h3 className="section__heading section--main__heading">You can catch me...</h3>
                 <HorizonList items={ contactsList } />  
                 <QuotesBox />          

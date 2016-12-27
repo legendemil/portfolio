@@ -2,6 +2,10 @@
     list-style: none
     max-width: 60%
     margin: 0 auto
+    @media all and (max-width: $bp-sm)
+        max-width: 90%
+        box-sizing: border-box
+        padding: 0
     &__item
         margin-top: 2rem
         display: flex
@@ -18,6 +22,10 @@
             &:hover
                 color: $main-color
                 cursor: pointer
+            
+        img
+            @media all and (max-width: $bp-sm)
+                width: 3rem  
         &.is-heading
             font:
                 size: 1.6rem

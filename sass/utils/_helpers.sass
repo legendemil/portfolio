@@ -2,6 +2,9 @@
     display: flex
     justify-content: space-between
     width: 100%
+    @media screen and (max-width: $bp-sm)
+        flex-direction: column
+        justify-content: center
 
 .lighter
     color: $light-color

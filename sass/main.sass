@@ -11,12 +11,19 @@
 @import 'modules/vertical-list'
 @import 'modules/quotes-box'
 
+html
+    font-size: 62.5%
 
 body
     font:
-        size: 62.5% 
         family: 'Raleway', sans-serif
     margin: 0
+    overflow-x: hidden
+@media screen and (max-width: $bp-sm)
+    html
+        font-size: 8px
+
+
 
 ::selection
     background-color: $black
@@ -32,3 +39,5 @@ body::-webkit-scrollbar-track
  
 body::-webkit-scrollbar-thumb 
   background-color: white
+
+
