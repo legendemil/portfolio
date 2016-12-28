@@ -4,7 +4,8 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors1"
+    "dev": "webpack-dev-server --progress --colors1",
+    "webpack": "webpack --optimize-minimize --optimize-dedupe"
   },
   "repository": {
     "type": "git",

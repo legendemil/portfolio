@@ -37,7 +37,7 @@ export default class SkillsIntro extends React.Component {
         return(
             <section className="skills-intro">       
                 <h2>
-                I use <br /> HTML, CSS, JS <br /> to create [<span className={"lightest anim-slide-text " + animTextStatus}>awesome</span>] <br />
+                I use <br /> HTML, CSS, JS <br /> to create <br />[<span className={"lightest anim-slide-text " + animTextStatus}>awesome</span>] <br />
                 webapps <span className="lighter text-smallest">Which you <HeartLogo /></span> 
                 </h2>  
                 

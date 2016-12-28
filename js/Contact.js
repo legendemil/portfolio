@@ -12,8 +12,7 @@ export default class Contact extends React.Component {
         return(
             <section className="section--main" id="contact">       
                 <h3 className="section__heading section--main__heading">You can catch me...</h3>
-                <HorizonList items={ contactsList } />  
-                <QuotesBox />          
+                <HorizonList items={ contactsList } />        
             </section> 
         )
     }

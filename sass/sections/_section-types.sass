@@ -14,10 +14,16 @@
         text-align: center
         margin: 0
         padding: 7rem
+        @media screen and (max-width: $bp-sm)
+            font:
+                size: $heading-section-size * .5
         &--sm
-            padding: 3rem
+            padding: 5rem
             font:
                 size: $heading-section-size-sm
+            @media screen and (max-width: $bp-sm)
+                font:
+                    size: $heading-section-size-sm * .7
     &__separator
         background-color: $main-color
         width: 100%
