@@ -3,7 +3,7 @@
     &__heading
         background: $main-color
         position: relative
-        font-size: $heading-section-size
+        font-size: $heading-section-size * .3
         font-family: monospace
         color: $white
         margin: 0 auto
@@ -12,9 +12,13 @@
         overflow: hidden
         width: 100%
         padding: 15rem 0 10rem
+        box-sizing: border-box
         &:after
             content: none 
+        @media screen and (min-width: $bp-xs)
+            font-size: $heading-section-size * .6
         @media screen and (min-width: $bp-sm)
+            font-size: $heading-section-size
             padding: 15rem 2rem
         @media screen and (min-width: $bp-md)
             padding: initial
@@ -47,17 +51,18 @@
             align: center
         &__header
             font:
-                size: 7.3rem
-            padding: 10rem 0 3rem       
-            @media screen and (min-width: $bp-sm)
+                size: 3.3rem
+            padding: 4rem 0 1rem     
+            @media screen and (min-width: $bp-xs)
                 font-size: 4.3rem
-            @media screen and (min-width: $bp-md)
-                font-size: 6rem
+                padding: 10rem 0 3rem
+            @media screen and (min-width: $bp-md) and (max-width: $bp-lg)
+                font-size: 5rem
         &__text
             font:
-                size: 6.7rem
+                size: 2rem
             line-height: 1.5
-            @media screen and (min-width: $bp-sm)
+            @media screen and (min-width: $bp-xs)
                 font-size: 2rem
             @media screen and (min-width: $bp-md)
                 font-size: 5rem
@@ -74,70 +79,3 @@
 @keyframes animate-pipe
     to
         border-left: none
-  
-
-//   .home
-//     background-color: $main-color  
-//     &__heading
-//         background: $main-color
-//         position: relative
-//         font-size: $heading-section-size
-//         font-family: monospace
-//         color: $white
-//         margin: 0 auto
-//         text-align: center
-//         align-self: center
-//         width: 12ch
-//         overflow: hidden
-//         &:after
-//             position: absolute
-//             content: ''
-//             height: 100%
-//             width: 100%
-//             background-color: $main-color
-//             top: 0
-//             left: 0
-//             transform-origin: right
-//             border-left: 2px solid $white
-//             animation:
-//                 name: show-text, animate-pipe
-//                 duration: 3s, .9s
-//                 timing-function: steps(12)
-//                 iteration-count: 1, infinite
-//                 fill-mode: forwards
-//         @media screen and (max-width: $bp-sm)
-//             width: 100%
-//             padding: 30rem 0
-//             &:after
-//                 content: none
-//     &-about
-//         padding: 5rem
-//         width: 50%
-//         background:
-//             color: $white
-//         font:
-//             weight: $font-bold
-//         text:
-//             align: center
-//         &__header
-//             font:
-//                 size: 7.3rem
-//             padding: 10rem 0 3rem
-//         &__text
-//             font:
-//                 size: 6.7rem
-//             line-height: 1.5
-//         @media screen and (max-width: $bp-sm)
-//             width: 100%
-//             box-sizing: border-box
-            
-
-            
-// @keyframes show-text
-//     to
-//         transform: translateX( calc( 100% - 4px ) )
-
-// @keyframes animate-pipe
-//     to
-//         border-left: none
-  
