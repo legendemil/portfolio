@@ -1,12 +1,25 @@
-.page-nav
+.page-nav  
     width: 100%
-    display: flex
-    justify-content: flex-end
     position: fixed
     top: 0
     left: 0
     background-color: $main-color
     z-index: 100
+    &__list
+        width: inherit
+        list-style: none     
+        display: flex
+        justify-content: flex-end
+        padding: 0
+        & li:first-child
+            margin-right: auto
+        @media screen and (max-width: $bp-sm)
+            flex-direction: column
+            & li:not(:first-child)
+                display: none
+            &.is-small li:not(:first-child)
+                display: block
+
     &__btn
         color: $nav-link-color
         text-decoration: none
@@ -17,11 +30,22 @@
         display: inline-block
         box-sizing: border-box
         transition: padding .3s, font-size .3s 
+        @media screen and (max-width: $bp-sm)
+            padding: 2rem
         &:hover
             background-color: $white
             color: $main-color
         &.is-small
             padding: 2rem
             font-size: 3rem
-        &:first-child
-            margin-right: auto
+        &-menu
+            display: none
+            @media screen and (max-width: $bp-sm)
+                font-size: 3rem
+                color: $white
+                display: inline-block
+                position: fixed
+                top: 2rem
+                right: 2rem
+
+        

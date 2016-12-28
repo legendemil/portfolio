@@ -36,7 +36,9 @@ export default class NavBtn extends React.Component {
         let isSmall = this.state.isSmall ? ' is-small' : '';
 
         return(
-            <a href={href} className={ "page-nav__btn" + isSmall }>{text}</a>
+            <li>
+                <a href={href} className={ "page-nav__btn" + isSmall }>{text}</a>
+            </li>
         )
     }
 }
