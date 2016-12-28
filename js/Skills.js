@@ -6,8 +6,8 @@ export default class Skills extends React.Component {
 
     render() {
         let 
-            currSkills = [ 'jquery', 'react', 'redux', 'sass'],
-            futureSkills = [ 'reactivex', 'node', 'angularjs'];
+            currSkills = ['jquery', 'react', 'redux', 'sass'].map( name => ({ name: name }) ),
+            futureSkills = [ 'reactivex', 'node', 'angularjs'].map( name => ({ name: name }) );
 
         return(
             <section className="section--main" id="skills">       

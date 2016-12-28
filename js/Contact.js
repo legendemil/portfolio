@@ -7,7 +7,19 @@ export default class Contact extends React.Component {
 
     render() {
         let 
-            contactsList = [ 'linkedin', 'codepen', 'twitter', 'freecodecamp', 'gmail' ];
+            contactsList = [{
+                name: 'linkedin',
+                link: 'https://www.linkedin.com/in/emil-pausz-28b379109'
+            }, {
+                name: 'codepen',
+                link: 'http://codepen.io/legendemil/'
+            }, {
+                name: 'twitter',
+                link: 'https://twitter.com/e_pausz'
+            }, {
+                name: 'freecodecamp',
+                link: 'https://www.freecodecamp.com/legendemil'
+            }];
 
         return(
             <section className="section--main" id="contact">       
