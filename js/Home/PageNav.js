@@ -1,18 +1,19 @@
 import React from "react";
 
 import NavBtn from "./PageNav/NavBtn";
+import MenuHamIcon from '../Logos/MenuHamIcon';
 
 export default class PageNav extends React.Component {
 
     constructor(props) {
         super(props);
-        this.showMenuItems = this.showMenuItems.bind(this);
+        this.toggleMenu = this.toggleMenu.bind(this);
         this.state = {
             isShowList: false
         };
     }
 
-    showMenuItems() {
+    toggleMenu() {
         this.setState({
             isShowList: !this.state.isShowList
         });
@@ -26,7 +27,7 @@ export default class PageNav extends React.Component {
             <nav className="page-nav">
                 <ul className={`page-nav__list ${isShowList}`}>
                     <NavBtn text={"Emil Pausz"} href={"#"}/>
-                    <span onClick={this.showMenuItems} className="page-nav__btn-menu">Menu</span>
+                    <MenuHamIcon onClick={this.toggleMenu}/>
                     <NavBtn text={"Skills"} href={"#skills"}/>
                     <NavBtn text={"Projects"} href={"#projects"}/>
                     <NavBtn text={"Contact"} href={"#contact"}/>

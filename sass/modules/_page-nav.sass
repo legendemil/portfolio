@@ -25,13 +25,13 @@
         text-decoration: none
         font:
             weight: $font-bold
-            size: 4rem 
-        padding: 6rem
+            size: 3rem 
+        padding: 2rem
         display: inline-block
         box-sizing: border-box
         transition: padding .3s, font-size .3s 
-        @media screen and (max-width: $bp-sm)
-            padding: 2rem
+        @media screen and (min-width: $bp-md)
+            padding: 6rem
         &:hover
             background-color: $white
             color: $main-color
@@ -42,10 +42,12 @@
             display: none
             @media screen and (max-width: $bp-sm)
                 font-size: 3rem
-                color: $white
+                fill: $white
                 display: inline-block
                 position: fixed
-                top: 2rem
+                top: 3rem
                 right: 2rem
+                width: 4rem
+                height: 4rem
 
         
