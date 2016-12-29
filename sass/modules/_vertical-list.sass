@@ -24,8 +24,9 @@
                 cursor: pointer
             
         img
-            @media all and (max-width: $bp-sm)
-                width: 3rem  
+            width: 3rem 
+            @media all and (min-width: $bp-md)
+                width: 5rem
         &.is-heading
             font:
                 size: 1.6rem

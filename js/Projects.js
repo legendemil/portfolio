@@ -15,6 +15,10 @@ export default class Projects extends React.Component {
             gitHref: 'https://github.com/legendemil/todo_app',
             text: 'Simple Todo App'
         },{
+            liveHref: 'https://legendemil.github.io/',
+            gitHref: 'https://github.com/legendemil/portfolio',
+            text: 'My Portfolio Site'
+        },{
             liveHref: 'http://codepen.io/legendemil/full/Krqaqy/',
             gitHref: 'https://github.com/legendemil/simon_game',
             text: "Simon Game"
