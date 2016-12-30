@@ -1,7 +1,7 @@
 import React from "react";
 
 import HorizonList from './Lists/HorizonList';
-import QuotesBox from './QuotesBox';
+import ContactForm from './ContactForm';
 
 export default class Contact extends React.Component {
 
@@ -22,9 +22,11 @@ export default class Contact extends React.Component {
             }];
 
         return(
-            <section className="section--main" id="contact">       
-                <h3 className="section__heading section--main__heading">You can catch me...</h3>
-                <HorizonList items={ contactsList } />        
+            <section className="section" id="contact">       
+                <h3 className="section__heading section--main__heading">You can catch me here...</h3>
+                <HorizonList items={ contactsList } />     
+                <h3 className="section__heading section--main__heading">Or drop me a line below</h3>   
+                <ContactForm />
             </section> 
         )
     }

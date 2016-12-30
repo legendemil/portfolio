@@ -15,7 +15,6 @@ export default class HorizonList extends React.Component {
     }
 
     onChange(isVisible) {
-        console.log(isVisible);
         if(isVisible) {
             this.setState({
                 isShowing: true
