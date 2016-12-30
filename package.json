@@ -19,7 +19,8 @@
   "homepage": "https://github.com/legendemil/portfolio#readme",
   "dependencies": {
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "react-visibility-sensor": "^3.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",

@@ -45,8 +45,8 @@ export default class Projects extends React.Component {
         }];
 
         return(
-            <section className="section section--light" id="projects">       
-                <h3 className="section__heading section--light__heading">Some Projects</h3>    
+            <section className="section" id="projects">       
+                <h3 className="section__heading">Some Projects</h3>    
                 <VerticalList items={ projects }/>                
             </section> 
         )

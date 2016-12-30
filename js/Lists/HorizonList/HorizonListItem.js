@@ -4,8 +4,9 @@ export default class HorizonListItem extends React.Component {
 
     render() {
         let { imgSrc, imgAlt, link } = this.props;
+        let showingClass = this.props.isShowing ? 'anim-show-item' : '';
         return(
-            <li className="horizon-list__item">
+            <li className={`horizon-list__item ${showingClass}`}>
                 {
                     link ? (
                         <a href={ link } target="_blank">
