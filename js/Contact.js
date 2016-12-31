@@ -14,11 +14,11 @@ export default class Contact extends React.Component {
                 name: 'codepen',
                 link: 'http://codepen.io/legendemil/'
             }, {
-                name: 'twitter',
-                link: 'https://twitter.com/e_pausz'
-            }, {
                 name: 'freecodecamp',
                 link: 'https://www.freecodecamp.com/legendemil'
+            }, {
+                name: 'twitter',
+                link: 'https://twitter.com/e_pausz'
             }];
 
         return(
