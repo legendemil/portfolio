@@ -11,7 +11,7 @@ export default class Skills extends React.Component {
 
         return(
             <section className="section" id="skills">       
-                <h3 className="section__heading">I can built something with</h3>
+                <h3 className="section__heading">I can build something with</h3>
                 <HorizonList items={ currSkills } />
                 <h3 className="section__heading">But also I'd like to master</h3>
                 <HorizonList items={ futureSkills } />             

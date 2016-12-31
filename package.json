@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/legendemil/portfolio#readme",
   "dependencies": {
+    "axios": "^0.15.3",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-visibility-sensor": "^3.6.0"
