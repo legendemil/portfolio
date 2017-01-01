@@ -18,8 +18,7 @@
         @media screen and (min-width: $bp-xs)
             font-size: $heading-section-size * .6
         @media screen and (min-width: $bp-sm)
-            font-size: $heading-section-size
-            padding: 15rem 2rem
+            font-size: $heading-section-size * .8
         @media screen and (min-width: $bp-md)
             padding: initial
             width: 12ch
@@ -40,6 +39,14 @@
                     timing-function: steps(12)
                     iteration-count: 1, infinite
                     fill-mode: forwards
+    &__caption
+        font-size: 3rem
+        text-align: center
+        color: $white
+        font-weight: $font-bold
+        box-sizing: border-box
+        @media screen and (min-width: $bp-md)
+            padding-top: 5rem
     &-about
         padding: 5rem
         width: 50%
