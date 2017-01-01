@@ -4,6 +4,7 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
+    "prod": "NODE_ENV=production webpack",
     "dev": "webpack-dev-server --progress --colors1",
     "webpack": "webpack --optimize-minimize --optimize-dedupe"
   },
