@@ -16,7 +16,7 @@ export default class SkillsIntro extends React.Component {
 
     showText() {
 
-        if(window.scrollY > this.startOffset - window.innerHeight) {
+        if(window.scrollY > this.startOffset - window.innerHeight / 1.2) {
             this.setState({
                 textStatus: true
             });
