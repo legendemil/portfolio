@@ -62,7 +62,7 @@ export default class ContactForm extends React.Component {
                         ''
                     )
                 }
-                
+                <div className="g-recaptcha" data-sitekey="6LfG1xAUAAAAAFaonzBy_45rSOr2fqdotg7tK6YQ"></div>
             </form>
         )
     }
